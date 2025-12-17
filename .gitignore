@@ -54,3 +54,6 @@ Thumbs.db
 
 # Project specific
 test_results.txt
+
+# Data
+data/
