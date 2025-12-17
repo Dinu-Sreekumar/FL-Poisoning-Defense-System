@@ -46,7 +46,17 @@ Federated Learning allows multiple clients to collaboratively train a model with
 ### DevOps
 *   **Containerization**: [Docker](https://www.docker.com/) & Docker Compose
 
-## 📦 Installation & Setup
+## � Dataset Setup (Required for Real Training)
+
+The system is designed to work with the **CICIDS2017** dataset. While it will fall back to synthetic data if missing, for real results you must download the dataset.
+
+1.  **Download** the cleaned dataset from Kaggle:
+    [CICIDS2017 Cleaned and Preprocessed](https://www.kaggle.com/datasets/ericanacletoribeiro/cicids2017-cleaned-and-preprocessed)
+2.  **Create** a `data` folder in the project root if it doesn't exist.
+3.  **Place** the CSV file in the `data/` folder.
+4.  **Rename** the file to `CICIDS2017_sample.csv` (or ensure it matches this name).
+
+## �📦 Installation & Setup
 
 ### Option 1: Docker (Recommended)
 The easiest way to run the project is using Docker Compose.
@@ -150,11 +160,3 @@ python verify_backend.py
         *   **Red Line**: Standard FedAvg (Accuracy will drop significantly as malicious % increases).
         *   **Green Line**: DetectionGuard (Accuracy remains stable).
 6.  **Batch Run**: Use "Run 5 Rounds" for quick simulation of convergence.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
